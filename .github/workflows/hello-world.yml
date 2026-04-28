@@ -21,3 +21,9 @@ jobs:
     steps:
       - name: "Print the current time"
         run: date
+  print-vars:
+    name: "Print secrets and variables."
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Print secrets and variables"
+        run: echo [[ secrets.MY_SECRET ]] && echo [[ vars.MY_VARS ]]
