@@ -26,4 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Print secrets and variables"
-        run: echo ${{ secrets.MY_SECRET }} && echo ${{ vars.MY_VAR }}
+        run: |
+          echo "::add-mask::${{ secrets.MY_SECRET }}"
+          echo "MY_SECRET_KEY is: ${{ secrets.MY_SECRET }}"
+          echo "JUNK is: ${{ secrets.JUNK }}"
+
