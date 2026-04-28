@@ -30,4 +30,5 @@ jobs:
           echo "::add-mask::${{ secrets.MY_SECRET }}"
           echo "MY_SECRET_KEY is: ${{ secrets.MY_SECRET }}"
           echo "JUNK is: ${{ secrets.JUNK }}"
+          echo "ABCD1234 is: ${{ secrets.ABCD1234 }}"
 
