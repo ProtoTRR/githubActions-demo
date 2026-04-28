@@ -26,4 +26,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Print secrets and variables"
-        run: echo ${{ secrets.MY_SECRET }} && echo ${{ variables.MY_VARS }}
+        run: echo ${{ secrets.MY_SECRET }} && echo ${{ vars.MY_VAR }}
